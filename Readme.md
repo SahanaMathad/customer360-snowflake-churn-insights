@@ -69,7 +69,10 @@ Created an interactive Tableau dashboard showing:
 6. RFM segments
 
 **🏗️ Architecture**
+
+
            ┌─────────────────────────────────────────┐
+           
            │                
                            **RAW Layer
            │
@@ -111,30 +114,49 @@ Created an interactive Tableau dashboard showing:
            
            └─────────────────────────────────────────┘
 
+
 **📁 Repository Structure**
 📁 customer360-project
+
 │
 ├── 📄 README.md
+
 ├── 📁 sql/
+
 │   ├── schema_setup.sql
+
 │   ├── raw_clean_gold_queries.sql
+
 │   ├── feature_engineering.sql
+
 │   ├── churn_upload.sql
+
 │
 ├── 📁 data/
+
 │   ├── raw_customers.csv
+
 │   ├── customer360_gold.csv
+
 │   ├── churn_predictions.csv
+
 │
 ├── 📁 notebooks/
+
 │   ├── churn_model_xgboost.ipynb
+
 │
 ├── 📁 dashboards/
+
 │   ├── tableau_screenshots.png
+
 │
 └── 📁 diagrams/
+
     ├── architecture.png
+    
     ├── medallion_flow.png
+    
 
 **🛠️ Tools & Technologies**
 🔹 Data Engineering
