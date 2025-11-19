@@ -1,4 +1,4 @@
-**Project Overview**
+**🔹 Project Overview**
 
 This project demonstrates:
 
@@ -159,7 +159,7 @@ Created an interactive Tableau dashboard showing:
     
     ├── medallion_flow.png
 
-**Dashboard screenshots**
+**🔹 Dashboard screenshots**
 
 ![**Behavioral Dashboard**](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Behavioral%20Analysis%20Dashboard%20(2).png)
 
@@ -168,9 +168,6 @@ Created an interactive Tableau dashboard showing:
 
 
 ![**Customer Insights Overview**](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Customer%20Insights%20Overview.png)
-
-
-
 
 
 
@@ -199,7 +196,7 @@ Tableau
 
 Matplotlib/Seaborn (optional)
 
-**Key Features**
+**🔹 Key Features**
 
 1. Fully automated multi-layer warehouse (RAW → CLEAN → GOLD)
 
@@ -270,4 +267,5 @@ Open a PR or reach out if you'd like to collaborate.
 📧 sahanamathad1892@gmail.com**
 
 🔗 LinkedIn:https://www.linkedin.com/in/sahana-mathad/
+
 🔗 GitHub: https://github.com/SahanaMathad/
