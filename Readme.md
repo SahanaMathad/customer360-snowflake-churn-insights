@@ -1,7 +1,7 @@
 **Project Overview**
 
 This project demonstrates:
-![Behavioral Analysis Dashboard](Behavioral Analysis Dashboard (2).png)
+![Behavioral Dashboard](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Behavioral%20Analysis%20Dashboard%20(2).png)
 
 **1.Data Engineering**
 
