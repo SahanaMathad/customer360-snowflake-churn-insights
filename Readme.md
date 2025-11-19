@@ -1,6 +1,7 @@
 **Project Overview**
 
 This project demonstrates:
+![Behavioral Analysis Dashboard](Behavioral Analysis Dashboard (2).png)
 
 **1.Data Engineering**
 
