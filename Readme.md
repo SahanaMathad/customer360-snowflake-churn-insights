@@ -14,87 +14,101 @@ Designed a Snowflake data warehouse using the Medallion Architecture
 
 **2. ETL / ELT Pipeline**
 
-Loaded data from CSV into Snowflake
+1. Loaded data from CSV into Snowflake
 
-Cleaned nulls, fixed dtypes, standardized labels
+2. Cleaned nulls, fixed dtypes, standardized labels
 
-Created engineered features (age, total spent, total purchases, children count, recency metrics)
+3. Created engineered features (age, total spent, total purchases, children count, recency metrics)
 
 **3. Customer 360° Model**
 
 The GOLD layer contains a unified table with:
 
-Demographics
+1. Demographics
 
-Spending behavior
+2. Spending behavior
 
-Purchase frequency
+3. Purchase frequency
 
-Recency & response metrics
+4. Recency & response metrics
 
-RFM segmentation fields
+5. RFM segmentation fields
 
-Final churn label
+6. Final churn label
 
 **4. Machine Learning (Python + XGBoost)**
 
-Exported GOLD dataset locally
+1. Exported GOLD dataset locally
 
-Performed:
+2. Performed:
 
-Data cleaning
+3. Data cleaning
 
-Feature encoding
+4. Feature encoding
 
-Train–test split
+5. Train–test split
 
-Trained XGBoost Binary Classifier for churn prediction
+6. Trained XGBoost Binary Classifier for churn prediction
 
-Pushed predictions back to Snowflake (GOLD.CUSTOMER_PREDICTIONS)
+7. Pushed predictions back to Snowflake (GOLD.CUSTOMER_PREDICTIONS)
 
 **5. Visualization (Tableau)**
 
 Created an interactive Tableau dashboard showing:
 
-Total revenue
+1. Total revenue
 
-Customer demographic breakdown
+2. Customer demographic breakdown
 
-Spending behavior
+3. Spending behavior
 
-Campaign response analysis
+4. Campaign response analysis
 
-Churn risk segmentation
+5. Churn risk segmentation
 
-RFM segments
+6. RFM segments
 
 **🏗️ Architecture**
            ┌─────────────────────────────────────────┐
-           │                **RAW Layer              │
-           │         (Ingested CSV Files)**          │
+           │                
+                           **RAW Layer
+           │
+           │         (Ingested CSV Files)** 
+           │
            └─────────────────────────────────────────┘
                                │
                                ▼
            ┌──────────────────────────────────────────┐
-           │                **CLEAN Layer             │
+           │                
+                           **CLEAN Layer              │
+                           
            │    (Standardization + Feature Cleaning)**│
+           
            └──────────────────────────────────────────┘
                                │
                                ▼
            ┌─────────────────────────────────────────┐
-           │                 **GOLD Layer            │
+           │                 
+                       **GOLD Layer  
+                                                     │
            │  Customer360 + RFM + Churn Dataset**    │
+           
            └─────────────────────────────────────────┘
                                │
                                ▼
            ┌───────────────────────────────────────────┐
-           │          **Machine Learning (Python)      │
+           │         
+                      **Machine Learning (Python)      │
+           
            │     XGBoost Model + Predictions Upload**  │
+           
            └───────────────────────────────────────────┘
                                │
                                ▼
            ┌─────────────────────────────────────────┐
+           
            │                **Tableau Dashboard**    │
+           
            └─────────────────────────────────────────┘
 
 **📁 Repository Structure**
