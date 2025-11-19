@@ -1,0 +1,221 @@
+**Project Overview**
+
+This project demonstrates:
+
+**1.Data Engineering**
+
+Designed a Snowflake data warehouse using the Medallion Architecture
+
+1. RAW (Bronze) – Direct ingestion of CSV files
+
+2. CLEAN (Silver) – Data cleaning, standardization, feature preparation
+
+3. GOLD (Gold) – Customer 360 model, RFM features, churn dataset
+
+**2. ETL / ELT Pipeline**
+
+Loaded data from CSV into Snowflake
+
+Cleaned nulls, fixed dtypes, standardized labels
+
+Created engineered features (age, total spent, total purchases, children count, recency metrics)
+
+**3. Customer 360° Model**
+
+The GOLD layer contains a unified table with:
+
+Demographics
+
+Spending behavior
+
+Purchase frequency
+
+Recency & response metrics
+
+RFM segmentation fields
+
+Final churn label
+
+**4. Machine Learning (Python + XGBoost)**
+
+Exported GOLD dataset locally
+
+Performed:
+
+Data cleaning
+
+Feature encoding
+
+Train–test split
+
+Trained XGBoost Binary Classifier for churn prediction
+
+Pushed predictions back to Snowflake (GOLD.CUSTOMER_PREDICTIONS)
+
+**5. Visualization (Tableau)**
+
+Created an interactive Tableau dashboard showing:
+
+Total revenue
+
+Customer demographic breakdown
+
+Spending behavior
+
+Campaign response analysis
+
+Churn risk segmentation
+
+RFM segments
+
+**🏗️ Architecture**
+           ┌─────────────────────────────────────────┐
+           │                **RAW Layer              │
+           │         (Ingested CSV Files)**          │
+           └─────────────────────────────────────────┘
+                               │
+                               ▼
+           ┌──────────────────────────────────────────┐
+           │                **CLEAN Layer             │
+           │    (Standardization + Feature Cleaning)**│
+           └──────────────────────────────────────────┘
+                               │
+                               ▼
+           ┌─────────────────────────────────────────┐
+           │                 **GOLD Layer            │
+           │  Customer360 + RFM + Churn Dataset**    │
+           └─────────────────────────────────────────┘
+                               │
+                               ▼
+           ┌───────────────────────────────────────────┐
+           │          **Machine Learning (Python)      │
+           │     XGBoost Model + Predictions Upload**  │
+           └───────────────────────────────────────────┘
+                               │
+                               ▼
+           ┌─────────────────────────────────────────┐
+           │                **Tableau Dashboard**    │
+           └─────────────────────────────────────────┘
+
+**📁 Repository Structure**
+📁 customer360-project
+│
+├── 📄 README.md
+├── 📁 sql/
+│   ├── schema_setup.sql
+│   ├── raw_clean_gold_queries.sql
+│   ├── feature_engineering.sql
+│   ├── churn_upload.sql
+│
+├── 📁 data/
+│   ├── raw_customers.csv
+│   ├── customer360_gold.csv
+│   ├── churn_predictions.csv
+│
+├── 📁 notebooks/
+│   ├── churn_model_xgboost.ipynb
+│
+├── 📁 dashboards/
+│   ├── tableau_screenshots.png
+│
+└── 📁 diagrams/
+    ├── architecture.png
+    ├── medallion_flow.png
+
+**🛠️ Tools & Technologies**
+🔹 Data Engineering
+
+Snowflake (Free Tier)
+
+SQL
+
+Medallion Architecture
+
+🔹 Machine Learning
+
+Python
+
+Pandas
+
+Scikit-learn
+
+XGBoost
+
+🔹 Visualization
+
+Tableau
+
+Matplotlib/Seaborn (optional)
+
+**Key Features**
+
+1. Fully automated multi-layer warehouse (RAW → CLEAN → GOLD)
+
+2. Customer 360 creation with engineered features
+
+3. End-to-end churn prediction pipeline
+
+4. Upload predictions back to Snowflake
+
+5. BI dashboard for business insights
+
+6. Beginner-friendly Snowflake setup (free tier)
+
+**📊 Dashboard Insights**
+
+The Tableau dashboard provides:
+
+Customer segmentation
+
+Spend patterns
+
+Campaign response behavior
+
+RFM clusters
+
+Churn probability distribution
+
+High-risk customer list
+
+**📌 How to Run the Project**
+
+Load data into Snowflake RAW layer
+
+Run CLEAN layer transformations
+
+Run GOLD layer feature engineering
+
+Download GOLD dataset
+
+Open Python notebook → train ML model
+
+Upload predictions to Snowflake
+
+Connect Tableau → create visual dashboard
+
+**🧠 Learnings**
+
+Hands-on experience with Snowflake
+
+Medallion data architecture
+
+SQL transformations and feature engineering
+
+Churn prediction using XGBoost
+
+End-to-end data pipeline design
+
+Business analytics with Tableau
+
+**🤝 Contributing**
+
+Contributions and suggestions are welcome!
+Open a PR or reach out if you'd like to collaborate.
+
+**📬 Contact**
+
+**Sahana Mathad
+📧 sahanamathad1892@gmail.com**
+
+🔗 LinkedIn:https://www.linkedin.com/in/sahana-mathad/
+🔗 GitHub: https://github.com/SahanaMathad/
