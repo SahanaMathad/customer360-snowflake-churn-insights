@@ -1,7 +1,6 @@
 **Project Overview**
 
 This project demonstrates:
-![Behavioral Dashboard](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Behavioral%20Analysis%20Dashboard%20(2).png)
 
 **1.Data Engineering**
 
@@ -159,7 +158,21 @@ Created an interactive Tableau dashboard showing:
     ├── architecture.png
     
     ├── medallion_flow.png
-    
+
+**Dashboard screenshots**
+
+![**Behavioral Dashboard**](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Behavioral%20Analysis%20Dashboard%20(2).png)
+
+
+![**Age Demographics & Churn Insights**](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Age%20Demographics%20%26%20Churn%20Insights.png)
+
+
+![**Customer Insights Overview**](https://raw.githubusercontent.com/SahanaMathad/customer360-snowflake-churn-insights/main/Customer%20Insights%20Overview.png)
+
+
+
+
+
 
 **🛠️ Tools & Technologies**
 🔹 Data Engineering
