@@ -74,10 +74,10 @@ Created an interactive Tableau dashboard showing:
            ┌─────────────────────────────────────────┐
            
            │                
-                           **RAW Layer
-           │
-           │         (Ingested CSV Files)** 
-           │
+                           **RAW Layer               │
+                           
+           │        (Ingested CSV Files)**           │
+           
            └─────────────────────────────────────────┘
                                │
                                ▼
@@ -116,6 +116,8 @@ Created an interactive Tableau dashboard showing:
 
 
 **📁 Repository Structure**
+
+
 📁 customer360-project
 
 │
@@ -152,7 +154,6 @@ Created an interactive Tableau dashboard showing:
 
 │
 └── 📁 diagrams/
-
     ├── architecture.png
     
     ├── medallion_flow.png
